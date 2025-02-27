@@ -35,15 +35,31 @@ body{
     margin: 0; 
 }
 
+h1{
+    font-size: 1.8rem;
+}
+
+p{
+    color: var(--text-content);
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 32rem;  
+    max-width: 36rem;  
+    -webkit-box-shadow: 10px 10px 44px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 44px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 44px -13px rgba(0,0,0,0.75);
+    border-radius: 2rem;
+}
+
+.card_margin{
+    margin: 1.5rem;
 }
 
 .card__image img {
     width: 100%;
-    max-width: 32rem;
+    max-width: 36rem;
     border-radius: 2rem; 
 }
 
@@ -52,6 +68,34 @@ body{
     color: var(--type);
     border-radius: 1rem; 
     width: fit-content;
-    padding:  0 1rem;
+    padding:  0.5rem 1.5rem;
     font-weight: bold; 
-} 
+    font-size: 1rem;
+}
+
+.card__content__title{
+    color: var(--text-content);
+    margin-bottom: 1rem;
+}
+
+.card__content__text{
+    line-height: 2.1rem;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.card__separator{
+    border-top: #E5EAF0 solid 0.1rem;
+}
+
+.card__name{
+    margin: 2rem;
+}
+
+.card__separator .card__name{
+    font-size: 1.2rem;
+    color: var(--text-content);
+
+}
+
